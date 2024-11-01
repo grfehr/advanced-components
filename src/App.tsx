@@ -1,14 +1,13 @@
-import Button from "./component/Button.tsx";
-import Container from './component/Container.tsx';
+import { useRef} from "react";
+import Input from './component/Input.tsx';
 
 function App() {
-  return (
-      <main>
-          <Container as={Button} onClick={() => {}} type ="button">
-              Click Me
-              </Container>
-      </main>
-  )
+    const input = useRef<HTMLInputElement>(null);
+    return (
+        <main>
+            <Input label={"Test"} id={"test"} ref={input} />
+        </main>
+    );
 }
 
 export default App;
