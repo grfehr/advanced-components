@@ -1,9 +1,13 @@
-import Input from "./component/Input.tsx";
+import Button from "./component/Button.tsx";
 function App() {
   return (
       <main>
-        <Input label={"Your Name"} id={"name"} type={'text'}/>
-        <Input label={"Your Age"} id={"age"} type={'number'} />
+        <p>
+          <Button el={"button"}>A Button</Button>
+        </p>
+        <p>
+          <Button el={"anchor"} href={"https://google.com"}>A Link</Button>
+        </p>
       </main>
   )
 }
