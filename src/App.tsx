@@ -4,7 +4,9 @@ import Container from './component/Container.tsx';
 function App() {
   return (
       <main>
-        <Container as={Button} />
+          <Container as={Button} onClick={() => {}} type ="button">
+              Click Me
+              </Container>
       </main>
   )
 }
